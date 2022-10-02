@@ -1,0 +1,120 @@
+* {
+    
+    margin-left: auto;
+    margin-right: auto; 
+    font-family: 'Poppins', sans-serif;
+    }
+img {
+    display: block;
+    margin: 0px auto;
+    }
+
+body {
+    
+    background: linear-gradient(90deg, rgba(102, 152, 245, 0.9) 0%, #81f864 100%);
+   }
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+h3{
+   text-align: center;
+    }
+
+.container  {
+   
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    overflow: hidden;
+}
+
+
+
+.cabeçalho {
+    background-color: #eee;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px;
+}
+
+.cabeçalho h2 {
+    margin: 0;
+}
+
+.form {
+    padding: 20px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 10px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form button {
+    background:linear-gradient(90deg, rgba(102, 152, 245, 0.9) 0%, #81f864 100%);
+    border: linear-gradient(90deg, rgba(102, 152, 245, 0.9) 0%, #81f864 100%);
+    border-radius: 10px;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+table {
+    
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 600px;
+    display: inline-flexbox;
+}
+
+.table-b {
+    
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+td, th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+tr:nth-child(even) {
+    background-color: #f1e7e7cb;
+}

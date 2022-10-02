@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIG-DCOMP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/dcomp-icon.png" alt="logo-dcomp-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <img src="images/dcomp-icon.png" alt="logo-dcomp">
+    <h1>SIG-DCOMP</h1>
+    <p>O SIG-DComp, conhecido também como Sistema Integrado de Gestão de Histórico Escolar do DCOMP,<br> dá suporte primordialmente aos cursos de Bacharelado em Ciência da Computação, Bacharelado em<br> Sistemas de Informação e Bacharelado em Engenharia de Computação, sua finalidade é gerenciar os dados<br>  do históric oescolar de nossos alunos e apresentar suas respectivas métricas.</p>
+<div class="container">
+    <div class="cabeçalho">
+        <h2>Insira seus Dados Escolares</h2>
+    </div>
+
+    <form class="form" id="myForm">
+        <div class="form-control">
+            <label>Período:</label>
+            <input type="number" placeholder="Período" step="0.1" id="ano" required>
+        </div>
+
+        <div class="form-control">
+            <label>Código da Disciplina:</label>
+            <input type="text" placeholder="Código da Disciplina" id="cd" required>
+        </div>
+
+        <div class="form-control">
+            <label>Carga Horária:</label>
+            <input type="number" placeholder="Carga Horária" id="ch" required>
+        </div>
+
+        <div class="form-control">
+            <label>Frequência:</label>
+            <input type="number" placeholder="Frequência" step="0.1" id="freq" required>
+        </div>
+
+        <div class="form-control">
+            <label>Nota:</label>
+            <input type="number" placeholder="Nota" step="0.1" id="nota" required>
+        </div>
+
+        <button type="submit" onclick="histPessoa(ano.value, cd.value, ch.value, freq.value, nota.value)">Enviar</button>
+    </form>
+</div>
+<br><br><br>
+<h3>Última Disciplina Adicionada:</h2>
+<table class="table-b">
+    <tr>
+        <th>Codigo: <span id="tcod"></span></th>
+    </tr>
+    <tr>
+        <th>Nota: <span id="tnota"></span></th>
+    </tr>
+    <tr>
+        <th>Período: <span id="tperiodo"></span></th>
+    </tr>
+    <tr>
+        <th>Frequência: <span id="tfreq"></span></th>
+    </tr>
+    <tr>
+        <th>C.H.: <span id="tch"></span></th>
+    </tr>
+
+</table>
+<h3>Métricas Acadêmicas:</h2>
+<table class="table-content">
+    <tr>
+        <th>Carga Horária Total: <span id="resulttempo"></span></th>
+    </tr>
+    <tr>
+        <th>Média Geral ponderada pela CH: <span id="resultmedia"></span></th>
+    </tr>
+    <tr>
+        <th>Desvio Padrão: <span id="resultdesvio"></span></th>
+    </tr>
+    <tr>
+        <th>Lista de Disciplinas com Aprovação: <span id="aprovadas"></span></th>
+    </tr>
+    <tr>
+        <th>Lista de Disciplinas com Reprovação: <span id="reprovadas"></span></th>
+    </tr>
+    <tr>
+        <th>Carga Horária Total: <span id="chtotal"></span></th>
+    </tr>
+    <tr>
+        <th>
+            Média geral por departamento: <span id="depart"></span>
+        </th>
+    </tr>
+</table>
+<br>
+<h3>Histórico Escolar Completo:</h2>
+<div id="dtPessoas">
+    <table id="tbPessoas">
+        <thead>
+        <tr>
+            <td>Ano/Período</td>
+            <td>Código</td>
+            <td>CH</td>
+            <td>Frequência</td>
+            <td>Nota</td>
+        </tr>
+        </thead>
+    </table>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
